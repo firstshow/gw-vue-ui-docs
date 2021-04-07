@@ -1,0 +1,51 @@
+:root {
+  scroll-behavior: smooth;
+}
+.sidebar {
+  width: 15rem;
+}
+.page {
+  padding-left: 15rem;
+}
+.page .back-to-top {
+  right: 25rem !important;
+}
+.theme-default-content:not(.custom) {
+  margin-left: 0;
+}
+.page-meta, .page-nav {
+  margin: 0 !important;
+}
+
+
+.gw-doc-simulator {
+  z-index: 1;
+  position: fixed;
+  top: 5rem;
+  right: 10px;
+  bottom: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 360px;
+  max-width: 375px;
+  max-height: 650px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2), 0 1px 4px rgba(0,0,0,.2);
+}
+@media (max-width: 719px) {
+.gw-doc-simulator {
+    display: none;
+}
+.simulator-layout .page {
+    padding: 0 !important;
+}
+}
+.gw-doc-simulator-fixed iframe {
+  display: block;
+  flex: 1;
+  width: 100%;
+}
+
